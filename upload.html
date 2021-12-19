@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Bootstrap Vertical Navigation with expand and collapse</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-inverse navbar-global navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Unused Medicine Donation</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-user navbar-right">
+            <li><a href="#about"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="login-box">
+        <div class="text-login">
+          <p>Upload</p>
+          </div>
+          <div class="login-form">
+              <form method="POST" action="upload.py">
+                  <input class="form-control" type="text" name="MedicineName" required placeholder="Medicine Name">
+                  <input class="form-control" type="text" name="MedicineCount" required placeholder="Medicine Count">
+                  <input class="form-control" type="text" name="ExpiryDate" required placeholder="Expiry Date">
+                  <input class="form-control" type="text" name="PhoneNunmber" required placeholder="Phone Nunmber">
+                  
+                  <button class="form-control">submit</button>
+              </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
